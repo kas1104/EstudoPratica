@@ -22,8 +22,16 @@ public class Atv4 {
         System.out.println("Deseja fazer outra operação? 1--Sim ou 2--Não");
         int numDecide = sc.nextInt();
         switch (numDecide) {
-            case 1 -> main(new String[0]);
-            case 2 -> System.out.println("O programa encerra aqui!");
+            case 1:
+                main(new String[0]);
+                break;
+            case 2:
+                System.out.println("O programa encerra aqui!");
+                break;
+            default:
+                System.out.println("Digite um valor valido!");
+                volta();
+                break;
         }
 
         sc.close();

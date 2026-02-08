@@ -26,8 +26,16 @@ public class Atv2 {
         System.out.println("Quer fazer outro teste? 1--Sim ou 2--Não");
         int numValida = sc.nextInt();
         switch (numValida) {
-            case 1 -> main(new String[0]);
-            case 2 -> System.out.println("O programa acaba aqui!");
+            case 1:
+                main(new String[0]);
+                break;
+            case 2:
+                System.out.println("O programa encerra aqui!");
+                break;
+            default:
+                System.out.println("Digite um valor valido!");
+                volta();
+                break;
         }
 
     }

@@ -36,11 +36,13 @@ public class Atv1 {
         switch (numDecide) {
             case 1:
                 main(new String[0]);
-            default:
-                sc.close();
-                return;
+            break;
             case 2:
                 System.out.println("O programa encerra aqui");
+                break;
+            default:
+                volta();
+                break;
         }
     }
 }
